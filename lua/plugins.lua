@@ -14,6 +14,18 @@ return require('packer').startup(function()
   -- bufferline
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   -- lsp
-  use {'neovim/nvim-lspconfig'}
+  use {
+      'neovim/nvim-lspconfig',
+  }
+  -- bvun-cmp
+  use 'hrsh7th/cmp-nvim-lsp' -- { name = nvim_lsp }
+  use 'hrsh7th/cmp-buffer'   -- { name = 'buffer' },
+  use 'hrsh7th/cmp-path'     -- { name = 'path' }
+  use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
+  use 'hrsh7th/nvim-cmp'
 
+  -- snip
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
 end)
+
