@@ -4,5 +4,5 @@ lua require('plugins')
 
 " plugin setting
 lua require('plugin-config/nvim-tree')
-" lua require('plugin-config/bufferline')
+lua require('plugin-config/bufferline')
 lua require('lsp/setup')
