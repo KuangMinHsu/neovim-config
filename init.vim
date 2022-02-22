@@ -9,3 +9,7 @@ lua require('lsp/setup')
 
 " keymap
 lua require('keybindings')
+
+" hard time on
+let g:hardtime_default_on = 1
+let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]

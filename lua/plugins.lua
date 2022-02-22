@@ -27,5 +27,7 @@ return require('packer').startup(function()
   -- snip
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
+  -- vim hard-time
+  use 'takac/vim-hardtime'
 end)
 
