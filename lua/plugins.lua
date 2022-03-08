@@ -24,6 +24,9 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-cmdline'  -- { name = 'cmdline' }
   use 'hrsh7th/nvim-cmp'
 
+  -- nvim-lint
+  use 'mfussenegger/nvim-lint'
+
   -- snip
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
