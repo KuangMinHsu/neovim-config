@@ -23,3 +23,7 @@ map("n", "<Up>", "<NOP>", opt)
 map("n", "<Down>", "<NOP>", opt)
 map("n", "<Left>", "<NOP>", opt)
 map("n", "<Right>", "<NOP>", opt)
+
+-- clear highlight
+
+map("n", "<esc><esc>", ":noh<CR>", opt)
