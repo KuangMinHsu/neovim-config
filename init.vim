@@ -15,4 +15,9 @@ lua require('keybindings')
 let g:hardtime_default_on = 0
 let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 
+" lint when save
 au BufWritePost <buffer> lua require('lint').try_lint()
+
+" Automatically removing all trailing whitespace 
+" https://vim.fandom.com/wiki/Remove_unwanted_spaces
+au BufWritePre * :%s/\s\+$//e
