@@ -32,5 +32,12 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip'
   -- vim hard-time
   use 'takac/vim-hardtime'
+
+  -- telescope
+  use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
 end)
 
