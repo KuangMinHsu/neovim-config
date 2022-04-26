@@ -21,5 +21,3 @@ au FileType python au BufWritePre * :%s/\s\+$//e
 
 " lint when save
 au BufWritePost <buffer> lua require('lint').try_lint()
-
-

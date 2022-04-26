@@ -27,3 +27,8 @@ map("n", "<Right>", "<NOP>", opt)
 -- clear highlight
 
 map("n", "<esc><esc>", ":noh<CR>", opt)
+
+map("n", "<Leader>ff", ":Telescope find_files<CR>", opt)
+map("n", "<Leader>fg", ":Telescope live_grep<CR>", opt)
+map("n", "<Leader>fb", ":Telescope buffers<CR>", opt)
+map("n", "<Leader>fs", ":Telescope grep_string<CR>", opt)
