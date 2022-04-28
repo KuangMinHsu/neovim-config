@@ -17,7 +17,7 @@ let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
 
 " Automatically removing all trailing whitespace
 " https://vim.fandom.com/wiki/Remove_unwanted_spaces
-au FileType python au BufWritePre * :%s/\s\+$//e
+au FileType python, yaml au BufWritePre * :%s/\s\+$//e
 
 " lint when save
 au BufWritePost <buffer> lua require('lint').try_lint()
