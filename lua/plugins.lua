@@ -46,5 +46,9 @@ return require('packer').startup(function()
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    -- nvim-hlslens
+    use {'kevinhwang91/nvim-hlslens'}
+
+
 end)
 

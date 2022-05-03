@@ -7,6 +7,7 @@ lua require('plugin-config/nvim-tree')
 lua require('plugin-config/bufferline')
 lua require('plugin-config/lint')
 lua require('plugin-config/line')
+lua require('plugin-config/hlslens')
 lua require('lsp/setup')
 
 " keymap
