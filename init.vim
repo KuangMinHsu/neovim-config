@@ -16,7 +16,7 @@ lua require('keybindings')
 " hard time on
 let g:hardtime_default_on = 0
 let g:list_of_disabled_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-
+set completeopt=menu,menuone,noselect
 " Automatically removing all trailing whitespace
 " https://vim.fandom.com/wiki/Remove_unwanted_spaces
 au FileType python,yaml au BufWritePre * :%s/\s\+$//e

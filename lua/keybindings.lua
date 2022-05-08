@@ -32,3 +32,10 @@ map("n", "<Leader>ff", ":Telescope find_files<CR>", opt)
 map("n", "<Leader>fg", ":Telescope live_grep<CR>", opt)
 map("n", "<Leader>fb", ":Telescope buffers<CR>", opt)
 map("n", "<Leader>fs", ":Telescope grep_string<CR>", opt)
+
+-- lsp-config
+-- https://github.com/neovim/nvim-lspconfig#Keybindings-and-completion
+map('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)
+map('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opt)
+map('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opt)
+map('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opt)
