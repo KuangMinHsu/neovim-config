@@ -33,6 +33,12 @@ map("n", "<Leader>fg", ":Telescope live_grep<CR>", opt)
 map("n", "<Leader>fb", ":Telescope buffers<CR>", opt)
 map("n", "<Leader>fs", ":Telescope grep_string<CR>", opt)
 
+map('n', '<leader>vff', ':vsplit | Telescope find_files<CR>', opt)
+map("n", "<Leader>vfg", ":vsplit | Telescope live_grep<CR>", opt)
+map("n", "<Leader>vfb", ":vsplit | Telescope buffers<CR>", opt)
+map("n", "<Leader>vfs", ":vsplit | Telescope grep_string<CR>", opt)
+
+
 -- lsp-config
 -- https://github.com/neovim/nvim-lspconfig#Keybindings-and-completion
 map('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opt)

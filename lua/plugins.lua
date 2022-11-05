@@ -59,5 +59,11 @@ return require('packer').startup(function()
         end
     }
 
+    -- https://github.com/ray-x/lsp_signature.nvim
+    use {
+        "ray-x/lsp_signature.nvim",
+    }
+
+
 end)
 
